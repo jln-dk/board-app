@@ -1,0 +1,55 @@
+.board {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f2f2f2;
+  content-visibility: auto;
+}
+
+.layers {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.layer {
+  position: absolute;
+  z-index: 0;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+}
+
+.zeroPoint {
+  transform: translate(-5px, -5px);
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: red;
+}
+
+.stickyNote {
+  background: #ffeda2;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  user-select: none;
+}
+
+.selectionNet {
+  /* 0044ff */
+  background: rgb(0 68 255 / 5%);
+  border: 0.5px solid rgb(0 68 255 / 50%);
+  /* opacity: 0.5; */
+}
+
+.debugInfo {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  z-index: 100;
+}
